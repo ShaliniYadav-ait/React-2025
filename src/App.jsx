@@ -6,6 +6,8 @@ import HobbyListProps from "./assets/components/HobbyListProps.jsx";
 import WelcomeStyle from "./assets/components/WelcomeStyle.jsx";
 import CounterFunctionWithHooks from "./assets/components/CounterFunctionWithHooks.jsx";
 import FunctionEventHandler from "./assets/components/FunctionWithEventHandler.jsx";
+import ClassEventHandler from "./assets/components/ClassEventHandler.jsx";
+import ClassWithoutBinding from "./assets/components/ClassWithoutBinding.jsx";
 
 export default function App() {
   return (
@@ -19,7 +21,9 @@ export default function App() {
       <HobbyListProps name="TW" hobbies={["Painting", "Drawing", "Sculpting"]}/>
       <CounterClassWithStateExample />
       <CounterFunctionWithHooks />
-  <FunctionEventHandler />
+      <FunctionEventHandler />
+      <ClassEventHandler />
+      <ClassWithoutBinding />
     </>
   );
 }
