@@ -4,6 +4,7 @@ import Greeting from "./assets/components/GreetProps.jsx";
 import GreetProps from "./assets/components/GreetProps.jsx";
 import HobbyListProps from "./assets/components/HobbyListProps.jsx";
 import WelcomeStyle from "./assets/components/WelcomeStyle.jsx";
+import CounterFunctionWithHooks from "./assets/components/CounterFunctionWithHooks.jsx";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <HobbyListProps name="test" hobbies={["Swimming", "Cycling", "Running"]}/>
       <HobbyListProps name="TW" hobbies={["Painting", "Drawing", "Sculpting"]}/>
       <CounterClassWithStateExample />
+      <CounterFunctionWithHooks />
   
     </>
   );
