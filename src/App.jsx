@@ -8,8 +8,14 @@ import CounterFunctionWithHooks from "./assets/components/CounterFunctionWithHoo
 import FunctionEventHandler from "./assets/components/FunctionWithEventHandler.jsx";
 import ClassEventHandler from "./assets/components/ClassEventHandler.jsx";
 import ClassWithoutBinding from "./assets/components/ClassWithoutBinding.jsx";
-
+import ChildComponent
+ from "./assets/components/ChildComponent.jsx";
 export default function App() {
+
+  const handleGreet = (name) => {
+    alert(`Hello ${name} from Parent Component!`);
+  }
+
   return (
     <>
       <WelcomeStyle/>
@@ -24,6 +30,8 @@ export default function App() {
       <FunctionEventHandler />
       <ClassEventHandler />
       <ClassWithoutBinding />
+      <ChildComponent greetHandler={handleGreet} />
     </>
+
   );
 }
