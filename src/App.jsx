@@ -8,6 +8,9 @@ import CounterFunctionWithHooks from "./assets/components/CounterFunctionWithHoo
 import FunctionEventHandler from "./assets/components/FunctionWithEventHandler.jsx";
 import ClassEventHandler from "./assets/components/ClassEventHandler.jsx";
 import ClassWithoutBinding from "./assets/components/ClassWithoutBinding.jsx";
+import ConditionalRendering from "./assets/components/ConditionalRendering.jsx";
+
+
 import ChildComponent
  from "./assets/components/ChildComponent.jsx";
 export default function App() {
@@ -31,6 +34,8 @@ export default function App() {
       <ClassEventHandler />
       <ClassWithoutBinding />
       <ChildComponent greetHandler={handleGreet} />
+
+      <ConditionalRendering showMessage={true} />
     </>
 
   );

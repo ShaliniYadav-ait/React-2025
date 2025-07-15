@@ -2,7 +2,7 @@ import React from "react";
 
 function ChildComponent(props) {
     return (
-        <button onClick={() => props.greetHandler("Hello from Child Component!")}>
+        <button onClick={() => props.greetHandler(" Shalini Yadav")}>
             Greet Parent </button>
     );
 }
